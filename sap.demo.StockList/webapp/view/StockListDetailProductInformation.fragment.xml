@@ -1,0 +1,40 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form"
+>
+	<f:SimpleForm
+		id="stockListProductInfo"
+		title="{i18n>DETAIL_FORM_TITLE}"
+		editable="false"
+		layout="ResponsiveGridLayout"
+        labelSpanL="4"
+        labelSpanM="4"
+        labelSpanS="6"
+        emptySpanL="1"
+        emptySpanM="1"
+        emptySpanS="0"
+        columnsL="1"
+        columnsM="1"
+    >
+        <f:content>
+			<Label id="stockListLblProductName" text="{i18n>DETAIL_INFO_LABEL_PRODUCTNAME}" />
+			<VBox>
+				<Text id="stockListTxtProductName" text="{detailData>/ProductName}" />
+                <Text id="stockListTxtProduct" text="{detailData>/Product}" />
+                <Text id="stockListTxtProductSupplier" text="{detailData>/ProductSupplier}" />
+            </VBox>
+            <Label id="stockListLblColor" text="{i18n>DETAIL_INFO_LABEL_COLOR}" />
+            <Text id="stockListTxtColor" text="{detailData>/ProductColor}" />
+            <Label id="stockListLblSize" text="{i18n>DETAIL_INFO_LABEL_SIZE}" />
+            <Text id="stockListTxtSize" text="{detailData>/ProductSize}" />
+            <Label id="stockListLblColorSupp" text="{i18n>DETAIL_INFO_LABEL_COLORSUPP}" />
+            <Text id="stockListTxtColorSupp" text="{detailData>/ProductColorSupplier}" />
+            <Label id="stockListLblSizeSupp" text="{i18n>DETAIL_INFO_LABEL_SIZESUPP}" />
+            <Text id="stockListTxtSizeSupp" text="{detailData>/ProductSizeSupplier}"  />
+            <Label id="stockListLblPrice" text="{i18n>DETAIL_INFO_LABEL_PRICE}" />
+            <Text id="stockListTxtPrice" text="{detailData>/ProductPrice}" />
+        </f:content>
+    </f:SimpleForm>
+	
+</core:FragmentDefinition>

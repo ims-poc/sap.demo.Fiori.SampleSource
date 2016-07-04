@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "sap.demo.ConfirmTransfer",
+        "description": "",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#sapdemoConfirmTransfer-Display",
+        "navigationComponentName": "sap.demo.ConfirmTransfer",
+        "intentSemanticObject": "sap.demo.ConfirmTransfer",
+        "intentAction": "Display",
+        "html5ApplicationName": "confirmtransfer",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "522713ad-5a4d-4b8b-b16e-e89fdcb0a7cd"
+        ],
+        "contentPackages": [
+            "4712f97f-ad38-4b60-ad9c-36aa82521c9b"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "出荷指示一覧",
+        "subtitle": "Confirm Transfer",
+        "searchKeywords": "出荷指示一覧,Confirm Transfer",
+        "displayIconUrl": "sap-icon://shipping-status",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

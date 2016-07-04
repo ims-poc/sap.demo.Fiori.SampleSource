@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Toolbar id="stockListToolbarForStockDetailLocFooter" width="100%">
+		<HBox width="100%" alignItems="Start" justifyContent="End">
+			<Button id="stockListBtnTransferStock" text="店間移動" icon="sap-icon://action" tooltip="Move to Transfer Stock" />
+		</HBox>
+	</Toolbar>
+</core:FragmentDefinition>

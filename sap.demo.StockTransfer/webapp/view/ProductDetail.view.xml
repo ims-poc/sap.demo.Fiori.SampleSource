@@ -1,0 +1,112 @@
+<mvc:View
+    controllerName="sap.demo.StockTransfer.controller.ProductDetail"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.commons"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form">
+    
+	<App>
+		<pages>
+			<Page id="StockTransferDetailPage" title="{i18n>DETAIL_PAGE_TITLE} （{transferData>/UserSiteName}）" showNavButton="true" navButtonPress="handleNavBack">
+                <!--<headerContent>-->
+                <!--    <Button id="StockTransferButtonUp" icon="sap-icon://up" press="onUpPress"  enabled="false" />-->
+                <!--    <Button id="StockTransferButtonDown" icon="sap-icon://down" press="onDownPress" enabled="false" />-->
+                <!--</headerContent>-->
+                <content>
+                    <HBox width="100%" justifyContent="SpaceBetween" alignItems="Start" id="stockTransferHBoxHeader">
+                        <VBox id="orderProductsVBoxProduct" width="60%">
+							<Panel width="100%" class="sapRTSTOrdProdPanelCalendar" id="orderProductsPanelCalendar" headerText="{i18n>TITLE_PRODUCT_DETAIL}">
+								<ObjectHeader title="{transferData>/ProductName}" id="orderProductsOHProduct">
+									<attributes>
+										<ObjectAttribute id="orderProductsObjAttrProductID" text="{transferData>/Product}" />
+									</attributes>
+								</ObjectHeader>
+								<ObjectHeader>
+									<attributes>
+										<ObjectAttribute id="orderProductsObjAttrProductColor" title="{i18n>TITLE_PRODUCT_COLOR}" text="{transferData>/ProductColor}" />
+										<ObjectAttribute id="orderProductsObjAttrProductSize" title="{i18n>TITLE_PRODUCT_SIZE}" text="{transferData>/ProductSize}" />
+										<ObjectAttribute id="orderProductsObjAttrSalesPrice" title="{i18n>TITLE_SALES_PRICE}" text="{transferData>/ProductPrice} {transferData>/Currency}" />
+										<ObjectAttribute id="orderProductsObjAttrStock" title="{i18n>TITLE_STOCK_QUANTITY}" text="{transferData>/ProductStock} {transferData>/ProductStockUnit}" />
+										<ObjectAttribute id="orderProductsObjAttrTradeCond" title="{i18n>TITLE_TRADE_CONDITION}" text="{transferData>/TradeCondition}" />
+										<ObjectAttribute id="orderProductsObjAttrComCd" title="{i18n>TITLE_COMMODITY_CODE}" text="{transferData>/CommodityCode}" />
+									</attributes>
+								</ObjectHeader>
+							</Panel>
+                        </VBox>
+                        <VBox alignItems="Start" width="40%" id="StockTransferVBoxQuantity">
+							<Panel width="25em" headerText="{i18n>TITLE_ORDER_INFORMATION}">
+								<HBox>
+									<Label text="{i18n>TITLE_ORDER_QUANTITY}" id="stockTransferLabelOrderQuantity" width="18em" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+									<Input id="stockTransferInputOrderQuantity" type="Number" maxLength="4" width="4rem" textAlign="Right" showValueStateMessage="false" value="{transferData>/ProductOrder}" change="onOrderQuantityChange" liveChange="onOrderQuantityLiveChange" />
+									<Text id="stockTransferTextSpace" text="" width="0.5rem" />
+									<Text id="stockTransferTextUnit" text="{transferData>/ProductOrderUnit}" width="2em" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+	                            </HBox>
+	                            <HBox>
+									<Text text="{i18n>TITLE_SUPPLIER_SITE}" id="StockTransferSupplierSite" width="8em" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+									<MultiInput id="stockTransferSupplierSiteInput" valueHelpRequest="onValueHelpRequest" width="15em" />
+								</HBox>
+								<HBox>
+	                            	<Label text="{i18n>TITLE_PRODUCT_INSPECTION}" id="StockTransferInspection" width="8em" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+	                            	<ComboBox id="StockTransferInspectionCombo" width="15em">
+										<core:Item key="IN001" text="検品場所01" />
+										<core:Item key="IN002" text="検品場所02" />
+										<core:Item key="IN003" text="検品場所03" />
+										<core:Item key="IN004" text="検品場所04" />
+										<core:Item key="IN005" text="検品場所05" />
+									</ComboBox>
+	                            </HBox>
+	                            <HBox>
+	                            	<Label text="{i18n>TITLE_RACK_NO}" id="stockTransferRackNo" width="8em" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+	                            	<Input id="stockTransferRackNoInput" type="Number" textAlign="Right" maxLength="10" width="15em" />
+	                            </HBox>
+                            </Panel>
+                        </VBox>
+                    </HBox>
+                    <!--<l:Grid defaultSpan="L12 M12 S12" width="auto" class="sapRTSTOrdProdGrid" id="StockTransferGridQuantities">-->
+                    <!--    <l:content>-->
+                    <!--        <f:SimpleForm editable="false" layout="ResponsiveGridLayout"-->
+                    <!--            labelSpanL="4" labelSpanM="4" labelSpanS="6" emptySpanL="1"-->
+                    <!--            emptySpanM="1" emptySpanS="0" columnsL="1" columnsM="1"-->
+                    <!--            id="StockTransferFormQuantities" class="sapRTSTOrdProdForm" >-->
+                    <!--            <f:content>-->
+                    <!--                <Label text="{i18n>DETAIL_ORDER_QUANTITY}" id="StockTransferLabelOrderQuantity" />-->
+                    <!--                <Text id="StockTransferTextOrderQuantity" text="{transferData>/PlannedOrderDeliveryInDays} 日間で {transferData>/OrderQuantity}{transferData>/OrderQuantityUnitCode}" />-->
+                    <!--                <Label text="{i18n>DETAIL_CURRENT_STOCK}" id="StockTransferLabelStock" />-->
+                    <!--                <Text id="StockTransferTextStock" text="{transferData>/AvailableStockQuantity} {transferData>/OrderQuantityUnitCode}" />-->
+                    <!--                <Label text="{i18n>DETAIL_PUSH_QUANTITY}" id="StockTransferLabelPushQuantity" />-->
+                    <!--                <Text id="StockTransferTextPushQuantity" text="{transferData>/TotalOrderItemQtyOfAllocOrders} {transferData>/OrderQuantityUnitCode}" />-->
+                                    <!--<Label text="{i18n>DETAIL_EXPIRATION}" id="StockTransferLabelExpiration"/>
+                                    <Text id="StockTransferTextExpiration" text="{RemainingShelfLifeInDays}" />-->
+                    <!--            </f:content>-->
+                    <!--        </f:SimpleForm>-->
+                    <!--    </l:content>-->
+                    <!--</l:Grid>-->
+                    <!--<l:Grid id="StockTransferGridProductInformation" defaultSpan="L12 M12 S12" width="auto">-->
+                    <!--    <l:content>-->
+                    <!--        <f:SimpleForm id="StockTransferFormProductInformation" editable="false" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" labelSpanS="6" emptySpanL="1" emptySpanM="1" emptySpanS="0" columnsL="1" columnsM="1" title="{i18n>DETAIL_PRODUCT_INFORMATION}" class="sapRTSTOrdProdForm">-->
+                    <!--            <f:content>-->
+                    <!--                <Label id="StockTransferLabelGTIN" text="{i18n>DETAIL_GTIN}" />-->
+                    <!--                <Text id="StockTransferTextGTIN" text="{transferData>/GlobalTradeItemNumber}" />-->
+                    <!--                <Label id="StockTransferLabelProductID" text="{i18n>DETAIL_PRODUCT_ID}" />-->
+                    <!--                <Text id="StockTransferTextProductID" text="{transferData>/ProductID}" />-->
+                    <!--                <Label id="StockTransferLabelMerchandiseCategory" text="{i18n>DETAIL_MERCHANDISE_CATEGORY}" />-->
+                    <!--                <Text id="StockTransferTextMerchandiseCategory" text="{transferData>/MerchandiseCategory}" />-->
+                    <!--                <Label id="StockTransferLabelTradeCond" text="{i18n>TradeCond}" />-->
+                    <!--                <Text id="StockTransferTextTradeCond" text="{transferData>/TradeCond}" />-->
+                    <!--                <Label id="StockTransferLabelCommodityCode" text="{i18n>CommodityCode}" />-->
+                    <!--                <Text id="StockTransferTextCommodityCode" text="{transferData>/CommodityCode}" />-->
+                    <!--            </f:content>-->
+                    <!--        </f:SimpleForm>-->
+                    <!--    </l:content>-->
+                    <!--</l:Grid>-->
+                </content>
+                <footer>
+                    <core:Fragment fragmentName="sap.demo.StockTransfer.view.FooterContent" type="XML" />
+                </footer>
+            </Page>
+        </pages>
+	</App>
+</mvc:View>

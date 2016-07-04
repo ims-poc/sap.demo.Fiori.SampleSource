@@ -1,0 +1,53 @@
+<mvc:View
+	controllerName="sap.demo.ConfirmChangePrice.controller.ChangePriceList"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+>
+
+	<App>
+		<pages>
+			<Page
+				id="mainListPage"
+				title=""
+			>
+				<headerContent>
+					<Button id="confirmChangePriceBtnSelectStore" icon="sap-icon://value-help" tooltip="Select Store" press="onValueHelpRequestForSite" />
+				</headerContent>
+				<content>
+					<!--<RadioButtonGroup id="confirmChangePriceRadGrpPrinted" columns="2" width="100%" select="setFilter" >-->
+					<!--	<buttons>-->
+					<!--		<RadioButton id="confirmChangePriceRadBtnPrintedHidden" text="{i18n>LIST_PAGE_PRINT_HIDDEN_TEXT}"  />-->
+					<!--		<RadioButton id="confirmChangePriceRadBtnPrintedVisible" text="{i18n>LIST_PAGE_PRINT_VISIBLE_TEXT}" />-->
+					<!--	</buttons>-->
+					<!--</RadioButtonGroup>-->
+					<Table
+						id="confirmChangePriceTblPriceList"
+						noDataText="{i18n>COM_NODATA_TEXT}"
+						growing="false"
+						mode="None"
+						items="{
+                            path: 'tblData>/changeRequestForPrice'
+                        }"
+					>
+						<headerToolbar>
+							<Toolbar>
+								<core:Fragment fragmentName="sap.demo.ConfirmChangePrice.view.Fragment.TableHeaderForListPage" type="XML" />
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<core:Fragment fragmentName="sap.demo.ConfirmChangePrice.view.Fragment.TableColumnsForListPage" type="XML" />
+						</columns>
+						<items>
+							<core:Fragment fragmentName="sap.demo.ConfirmChangePrice.view.Fragment.TableItemsForListPage" type="XML" />
+						</items>
+					</Table>
+				</content>
+				<!--<footer>-->
+				<!--	<core:Fragment fragmentName="sap.demo.ConfirmChangePrice.view.Fragment.Footer" type="XML" />-->
+				<!--</footer>-->
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

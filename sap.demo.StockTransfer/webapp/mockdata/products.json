@@ -1,0 +1,522 @@
+{
+	"ProductCollection":
+	[
+		{
+			"Product"	: "430623029995",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "クルースエットＮＴ",
+			"ProductColor" : "アイボリー",
+			"ProductSize" : "フリーサイズ",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 10,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 2,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 16000,
+			"Currency" : "JPY",
+			"TradeCondition" : "033",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "0001",
+			"CommodityCodeName" : "アートフラワー",
+			"Season" : "06",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "430623030007",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "クルースエットＮＴ",
+			"ProductColor" : "ライトグレー",
+			"ProductSize" : "フリーサイズ",
+			"ProductOrder" : 10,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 10,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 5,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 16000,
+			"Currency" : "JPY",
+			"TradeCondition" : "010",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1004",
+			"CommodityCodeName" : "鹿島（食品）",
+			"Season" : "06",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "430623030014",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "クルースエットＮＴ",
+			"ProductColor" : "グレー",
+			"ProductSize" : "フリーサイズ",
+			"ProductOrder" : 15,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 3,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 0,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 16000,
+			"Currency" : "JPY",
+			"TradeCondition" : "080",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1010",
+			"CommodityCodeName" : "ラ・カーヴ",
+			"Season" : "06",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "430623030021",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "スエットニットＰＴ",
+			"ProductColor" : "ライトグレー",
+			"ProductSize" : "フリーサイズ",
+			"ProductOrder" : 2,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 1,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 90,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 17000,
+			"Currency" : "JPY",
+			"TradeCondition" : "303",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1009",
+			"CommodityCodeName" : "和総菜",
+			"Season" : "06",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "430623030038",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "スエットニットＰＴ",
+			"ProductColor" : "グレー",
+			"ProductSize" : "フリーサイズ",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 23,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 0,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 17000,
+			"Currency" : "JPY",
+			"TradeCondition" : "623",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1020",
+			"CommodityCodeName" : "浦和（食品）",
+			"Season" : "06",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364534",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２１無地平",
+			"ProductColor" : "アイボリー",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 30,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 28,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "503",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "8003",
+			"CommodityCodeName" : "XXXX",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364541",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２１無地平",
+			"ProductColor" : "カーキ",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 9,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 25,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 9780,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "202",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1011",
+			"CommodityCodeName" : "ハロッズ",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364558",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２１無地平",
+			"ProductColor" : "ネービーブルー",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 5,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 120,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "750",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1013",
+			"CommodityCodeName" : "川越（食品）",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364565",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２１無地平",
+			"ProductColor" : "ライトグレー",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 10,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 2,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "810",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1004",
+			"CommodityCodeName" : "鹿島（食品）",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364572",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２１無地平",
+			"ProductColor" : "グレー",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 12,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 5,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "202",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1004",
+			"CommodityCodeName" : "鹿島（食品）",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364589",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２１無地平",
+			"ProductColor" : "黒",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 20,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 24,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "033",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1009",
+			"CommodityCodeName" : "和総菜",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364596",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２２無地平",
+			"ProductColor" : "アイボリー",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 2090,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 90,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "081",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1000",
+			"CommodityCodeName" : "東浦和（食品）",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364602",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２２無地平",
+			"ProductColor" : "カーキ",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 3,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 34,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "624",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1004",
+			"CommodityCodeName" : "鹿島（食品）",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364619",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２２無地平",
+			"ProductColor" : "ネービーブルー",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 340,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 89,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "803",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1020",
+			"CommodityCodeName" : "浦和（食品）",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364626",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２２無地平",
+			"ProductColor" : "ライトグレー",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 130,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 97,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "810",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1013",
+			"CommodityCodeName" : "川越（食品）",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		},
+		{
+			"Product"	: "4513044364633",
+			"ProductForSupplier" : "9999999999",
+			"ProductName" : "３４０８０２２無地平",
+			"ProductColor" : "グレー",
+			"ProductSize" : "靴下　足長：　２３",
+			"ProductOrder" : 0,
+			"ProductOrderUnit" : "EA",
+			"ProductStock" : 13,
+			"ProductStockUnit" : "EA",
+			"ProductScheduledStock" : 356,
+			"ProductScheduledStockUnit" : "EA",
+			"ProductPrice" : 1300,
+			"Currency" : "JPY",
+			"TradeCondition" : "503",
+			"TradeConditionName" : "",
+			"CommodityCode"	: "1002",
+			"CommodityCodeName" : "和洋酒",
+			"Season" : "05",
+			"SupplierProductColor" : "999",
+			"SupplierProductSize" : "XX001",
+			"SupplierSite" : ""
+		}
+    ],
+	"ProductCollectionStats": {
+		"Filters": 
+		[
+			{
+				"type": "取引条件",
+				"filterKey" : "TradeCondition",
+				"values":
+				[
+					{
+						"text" : "010",
+						"data" : "010"
+					},
+					{
+						"text" : "033",
+						"data" : "033"
+					},
+					{
+						"text" : "080",
+						"data" : "080"
+					},
+					{
+						"text" : "081",
+						"data" : "081"
+					},
+					{
+						"text" : "202",
+						"data" : "202"
+					},
+					{
+						"text": "303",
+						"data": "303"
+					},
+					{
+						"text" : "503",
+						"data" : "503"
+					},
+					{
+						"text" : "623",
+						"data" : "623"
+					},
+					{
+						"text": "624",
+						"data": "624"
+					},
+					{
+						"text": "750",
+						"data": "750"
+					},
+					{
+						"text": "803",
+						"data": "803"
+					},
+					{
+						"text" : "810",
+						"data" : "810"
+					}
+				]
+			},
+			{
+				"type" : "品番",
+				"filterKey" : "CommodityCode",
+				"values" :
+				[
+					{
+						"text": "0001　アートフラワー",
+						"data": "0001"
+					},
+					{
+						"text": "1000　東浦和（食品）",
+						"data": "1000"
+					},
+					{
+						"text": "1001　河辺（食品）",
+						"data": "1001"
+					},
+					{
+						"text": "1002　和洋酒",
+						"data": "1002"
+					},
+					{
+						"text" : "1003　富士見（食品）",
+						"data" : "1003"
+					},
+					{
+						"text" : "1004　鹿島（食品）",
+						"data" : "1004"
+					},
+					{
+						"text" : "1009　和総菜",
+						"data" : "1009"
+					},
+					{
+						"text" : "1010　ラ・カーヴ",
+						"data" : "1010"
+					},
+					{
+						"text" : "1011　ハロッズ",
+						"data" : "1011"
+					},
+					{
+						"text" : "1012　小山（食品）",
+						"data" : "1012"
+					},
+					{
+						"text" : "1013　川越（食品）",
+						"data" : "1013"
+					},
+					{
+						"text" : "1020　浦和（食品）",
+						"data" : "1020"
+					},
+					{
+						"text" : "8003　XXXX",
+						"data" : "8003"
+					}
+				]
+			},
+			{
+				"type" : "シーズン",
+				"filterKey" : "Season",
+				"values" : [
+					{
+						"text" : "2016年　春夏",
+						"data" : "05"
+					},
+					{
+						"text" : "2016年　秋冬",
+						"data" : "06"
+					},
+					{
+						"text" : "2015年　春夏",
+						"data" : "03"
+					},
+					{
+						"text" : "2015年　秋冬",
+						"data" : "04"
+					},
+					{
+						"text" : "2014年　春夏",
+						"data" : "01"
+					},
+					{
+						"text" : "2014年　秋冬",
+						"data" : "02"
+					}
+				]
+			}
+		]
+	}
+}

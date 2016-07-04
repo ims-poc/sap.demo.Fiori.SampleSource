@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "sap.demo.OrderProducts",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#sapdemoOrderProducts-Display",
+        "navigationComponentName": "sap.demo.OrderProducts",
+        "intentSemanticObject": "sap.demo.OrderProducts",
+        "intentAction": "Display",
+        "html5ApplicationName": "orderproducts",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "522713ad-5a4d-4b8b-b16e-e89fdcb0a7cd"
+        ],
+        "contentPackages": [
+            "4712f97f-ad38-4b60-ad9c-36aa82521c9b"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "商品発注",
+        "subtitle": "Order Products",
+        "searchKeywords": "商品発注,Order Products",
+        "displayIconUrl": "sap-icon://sales-order-item",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
