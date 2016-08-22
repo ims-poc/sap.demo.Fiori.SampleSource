@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<ColumnListItem
+		id="confirmChangePriceColLstItmProductPriceList"
+	>
+		<cells>
+			<!--<Text id="confirmChangePriceTxtChildInstructionNo" text="{tblData>ChildInstructionNo}" />-->
+			<VBox>
+				<Text id="confirmChangePriceTxtProduct" text="{tblData>Product}" />
+				<Text id="confirmChangePriceTxtProductNm" text="{tblData>ProductName}" />
+				<Text id="confirmChangePriceTxtSupplierProduct" text="{tblData>SupplierProduct}" />
+			</VBox>
+			<Text id="confirmChangePriceTxtProductColor" text="{tblData>ProductColor}" />
+			<Text id="confirmChangePriceTxtProductSize" text="{tblData>ProductSize}" />
+			<!--<Text id="confirmChangePriceTxtNewClass" text="{tblData>NewClass}" />-->
+			<u:Currency id="confirmChangePriceCurCurrentPrice" value="{tblData>CurrentPrice}" currency="{tblData>Currency}" useSymbol="false" maxPrecision="1" />
+			<u:Currency id="confirmChangePriceCurNewPrice" value="{tblData>NewPrice}" currency="{tblData>Currency}" useSymbol="false" maxPrecision="1" />
+			<!--<u:Currency id="confirmChangePriceCurNewCost" value="{tblData>NewCost}" currency="{tblData>Currency}" useSymbol="false" maxPrecision="1" />-->
+			<!--<u:Currency id="confirmChangePriceCurPurchasePrice" value="{tblData>PurchasePrice}" currency="{tblData>Currency}" useSymbol="false" maxPrecision="1" />-->
+			<!--<u:Currency id="confirmChangePriceCurPurchaseCost" value="{tblData>PurchaseCost}" currency="{tblData>Currency}" useSymbol="false" maxPrecision="1" />-->
+			<Text id="confirmChangePriceTxtStockQuantity"
+				text="{
+					path : 'tblData>StockQuantity',
+					formatter : 'sap.demo.ConfirmChangePrice.util.common.setCammaForNumber'
+				} {tblData>StockQuantityUnit}"
+			/>
+		</cells>
+	</ColumnListItem>
+</core:FragmentDefinition>

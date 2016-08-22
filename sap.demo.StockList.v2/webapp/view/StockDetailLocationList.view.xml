@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName="sap.demo.StockList.controller.StockDetailLocationList"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.commons"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+>
+	
+	<App>
+		<pages>
+			<Page
+				id="stockListMainDetailLocationPage"
+				title="{i18n>DETAIL_LOC_TITLE}（{detailLocData>/UserSiteName}）"
+				showNavButton="true"
+				navButtonPress="handleNavBack"
+			>
+				<content>
+					<core:Fragment fragmentName="sap.demo.StockList.view.fragment.stockDetailLoc.StockListForLocation" type="XML" />
+				</content>
+				<footer>
+					<core:Fragment fragmentName="sap.demo.StockList.view.fragment.stockDetailLoc.FooterContentForStockDetailLoc" type="XML" />
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

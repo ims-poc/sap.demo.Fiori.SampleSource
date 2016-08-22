@@ -1,0 +1,555 @@
+{
+	"Master" : 
+	[
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10002001",
+			"ProfitCenterGrpNm" : "婦人第一商品部"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10002002",
+			"ProfitCenterGrpNm" : "婦人第二商品部"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10002003",
+			"ProfitCenterGrpNm" : "ベビー子供用品商品部"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10002004",
+			"ProfitCenterGrpNm" : "婦人第三商品部"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102001",
+			"ProfitCenterGrpNm" : "サンジェルマン"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102003",
+			"ProfitCenterGrpNm" : "イセタンガール"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102004",
+			"ProfitCenterGrpNm" : "ヤングスポーツ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102005",
+			"ProfitCenterGrpNm" : "ヤングスポーツ２"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102011",
+			"ProfitCenterGrpNm" : "ヤングクローバー、トール"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102012",
+			"ProfitCenterGrpNm" : "レディクローバー"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102013",
+			"ProfitCenterGrpNm" : "マ・ランジェリー"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102021",
+			"ProfitCenterGrpNm" : "イセタンガール"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102022",
+			"ProfitCenterGrpNm" : "グローバルクローゼット"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102023",
+			"ProfitCenterGrpNm" : "ＴＯＫＹＯクローゼット"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102024",
+			"ProfitCenterGrpNm" : "アーバンクローゼット"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102025",
+			"ProfitCenterGrpNm" : "ストロベリーショップ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102031",
+			"ProfitCenterGrpNm" : "キャリアスタイル"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102032",
+			"ProfitCenterGrpNm" : "クローバーショップ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102035",
+			"ProfitCenterGrpNm" : "リ・スタイル"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102036",
+			"ProfitCenterGrpNm" : "Ｉデザイナーズ・イースト"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102037",
+			"ProfitCenterGrpNm" : "Ｉデザイナーズ・ウェスト"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102038",
+			"ProfitCenterGrpNm" : "ＩＮＴクリエーターズ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102041",
+			"ProfitCenterGrpNm" : "ウーマン１"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102042",
+			"ProfitCenterGrpNm" : "ウーマン２"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102043",
+			"ProfitCenterGrpNm" : "ウーマン３・マチュア"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102046",
+			"ProfitCenterGrpNm" : "Ｉラグジュアリーイースト"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102047",
+			"ProfitCenterGrpNm" : "Ｉラグジュアリーウエスト"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102071",
+			"ProfitCenterGrpNm" : "コンテンポラリーガーデン"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102072",
+			"ProfitCenterGrpNm" : "オーキッドプラザ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102073",
+			"ProfitCenterGrpNm" : "エレガンス、フォーマル"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102074",
+			"ProfitCenterGrpNm" : "プライムガーデン"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102075",
+			"ProfitCenterGrpNm" : "ＣＳ１メッセージ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102076",
+			"ProfitCenterGrpNm" : "コンテンポラリー３"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102077",
+			"ProfitCenterGrpNm" : "Ｉデザイナーズ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102078",
+			"ProfitCenterGrpNm" : "コンテンポラリー２"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102081",
+			"ProfitCenterGrpNm" : "催事１"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102082",
+			"ProfitCenterGrpNm" : "催事２"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102083",
+			"ProfitCenterGrpNm" : "催事３"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102084",
+			"ProfitCenterGrpNm" : "催事４"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102085",
+			"ProfitCenterGrpNm" : "催事５"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102098",
+			"ProfitCenterGrpNm" : "その他"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10102201",
+			"ProfitCenterGrpNm" : "CHIBAクローゼット"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760101",
+			"ProfitCenterGrpNm" : "アウトレット佐野"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760102",
+			"ProfitCenterGrpNm" : "アウトレット酒々井"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760103",
+			"ProfitCenterGrpNm" : "アウトレット阿見"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760104",
+			"ProfitCenterGrpNm" : "アウトレット御殿場"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760105",
+			"ProfitCenterGrpNm" : "アウトレット木更津"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760198",
+			"ProfitCenterGrpNm" : "アウトレット卸売用"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760201",
+			"ProfitCenterGrpNm" : "ミラー　ルミネ新宿"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760202",
+			"ProfitCenterGrpNm" : "ミラー　ルミネ大宮"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760203",
+			"ProfitCenterGrpNm" : "ミラー　セレオ八王子"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760204",
+			"ProfitCenterGrpNm" : "ミラー　ルミネ横浜"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760205",
+			"ProfitCenterGrpNm" : "ミラー　ルミネ北千住"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760206",
+			"ProfitCenterGrpNm" : "ミラー　パルコ吉祥寺"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760207",
+			"ProfitCenterGrpNm" : "ミラー　ららぽーと船橋"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760208",
+			"ProfitCenterGrpNm" : "ミラー　テルミナ錦糸町"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760209",
+			"ProfitCenterGrpNm" : "ミラー　アトレ大井町"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760210",
+			"ProfitCenterGrpNm" : "ミラー湘南Ｔ－ＳＩＴＥ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760211",
+			"ProfitCenterGrpNm" : "ミラー東急Ｐ表参道原宿"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760212",
+			"ProfitCenterGrpNm" : "ミラーラスカ茅ヶ崎"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760213",
+			"ProfitCenterGrpNm" : "ミラー　アトレ恵比寿"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760298",
+			"ProfitCenterGrpNm" : "ミラーボーテ卸売用"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760401",
+			"ProfitCenterGrpNm" : "羽田メンズストア（Ｔ１）"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760402",
+			"ProfitCenterGrpNm" : "羽田メンズストア（Ｔ２）"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760403",
+			"ProfitCenterGrpNm" : "羽田レディスストア（Ｔ１"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760501",
+			"ProfitCenterGrpNm" : "伊勢丹新宿サブナード"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760601",
+			"ProfitCenterGrpNm" : "六本木イセタンサローネ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760602",
+			"ProfitCenterGrpNm" : "イセタンサローネ　メンズ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10760603",
+			"ProfitCenterGrpNm" : "イセタンハウス（名古屋）"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10769101",
+			"ProfitCenterGrpNm" : "アイ・プラザ東浦和"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10769102",
+			"ProfitCenterGrpNm" : "エムアイ　プラザ河辺"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10769103",
+			"ProfitCenterGrpNm" : "ＭＩプラザ富士見"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10769104",
+			"ProfitCenterGrpNm" : "ＭＩプラザ立川立飛"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10769105",
+			"ProfitCenterGrpNm" : "ＭＩプラザ⑨"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10769190",
+			"ProfitCenterGrpNm" : "サテライト共通"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779101",
+			"ProfitCenterGrpNm" : "サテライト深谷"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779102",
+			"ProfitCenterGrpNm" : "サテライト高崎"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779103",
+			"ProfitCenterGrpNm" : "サテライト牛久"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779104",
+			"ProfitCenterGrpNm" : "サテライト水戸"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779105",
+			"ProfitCenterGrpNm" : "サテライト鹿島"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779106",
+			"ProfitCenterGrpNm" : "サテライト桐生"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779107",
+			"ProfitCenterGrpNm" : "サテライト古河"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779108",
+			"ProfitCenterGrpNm" : "サテライト小山"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779109",
+			"ProfitCenterGrpNm" : "ＭＩプラザ川越"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779110",
+			"ProfitCenterGrpNm" : "サテライト新所沢"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779111",
+			"ProfitCenterGrpNm" : "サテライト浦和"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779112",
+			"ProfitCenterGrpNm" : "サテライト久喜"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779113",
+			"ProfitCenterGrpNm" : "サテライト馬事公苑"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779114",
+			"ProfitCenterGrpNm" : "ＭＩプラザアミューあつぎ"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779130",
+			"ProfitCenterGrpNm" : "サテライト伊勢崎"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779131",
+			"ProfitCenterGrpNm" : "ＭＩプラザ羽生"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779132",
+			"ProfitCenterGrpNm" : "サテライトいわき"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779133",
+			"ProfitCenterGrpNm" : "サテライト館林"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779134",
+			"ProfitCenterGrpNm" : "サテライト春日部"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779135",
+			"ProfitCenterGrpNm" : "サテライトつくば"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779136",
+			"ProfitCenterGrpNm" : "サテライト川口"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779137",
+			"ProfitCenterGrpNm" : "ＭＩプラザひたちなか"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779138",
+			"ProfitCenterGrpNm" : "ＭＩプラザレイクタウン"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779140",
+			"ProfitCenterGrpNm" : "サテライト聖徳大学"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779150",
+			"ProfitCenterGrpNm" : "サテライト五井"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779151",
+			"ProfitCenterGrpNm" : "サテライト木更津"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779152",
+			"ProfitCenterGrpNm" : "サテライト館山"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779153",
+			"ProfitCenterGrpNm" : "サテライト東金"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779154",
+			"ProfitCenterGrpNm" : "サテライト成田"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779155",
+			"ProfitCenterGrpNm" : "サテライト旭"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779156",
+			"ProfitCenterGrpNm" : "サテライト茂原"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779157",
+			"ProfitCenterGrpNm" : "サテライト臼井"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779158",
+			"ProfitCenterGrpNm" : "ＭＩプラザユーカリが丘"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779159",
+			"ProfitCenterGrpNm" : "ＭＩプラザ木更津"
+		},
+		{
+			"ManagementArea" : "1000",
+			"ProfitCenterGrp" : "S10779190",
+			"ProfitCenterGrpNm" : "サテライト共通"
+		}
+	]
+}

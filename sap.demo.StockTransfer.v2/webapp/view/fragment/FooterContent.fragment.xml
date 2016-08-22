@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Toolbar id="stockTransferToolbarFooter" width="100%">
+		<HBox width="25%" />
+		<HBox width="50%" justifyContent="Center">
+			<Button id="stockTransferButtonLess" icon="sap-icon://less" press="onLessButtonPress" />
+			<HBox width="40%" />
+			<Button id="stockTransferButtonAdd" icon="sap-icon://add" press="onAddButtonPress" />
+		</HBox>
+		<HBox id="stockTransferHBoxConfirm" width="25%" justifyContent="End">
+			<Button id="stockTransferButtonConfirm" type="Accept" text="確認" press="onConfirm" visible="true" />
+		</HBox>
+		<HBox id="stockTransferHBoxSave" width="25%" justifyContent="End" visible="false">
+			<Button id="stockTransferButtonCancel" type="Reject" text="中止" press="onCancel" visible="false" />
+			<Button id="stockTransferButtonSave" type="Accept" text="保存" press="onSave" visible="false" />
+		</HBox>
+	</Toolbar>
+</core:FragmentDefinition>

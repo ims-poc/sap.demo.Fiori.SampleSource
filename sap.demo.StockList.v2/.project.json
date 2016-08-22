@@ -1,0 +1,43 @@
+{
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild"
+  ],
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "webapp",
+    "buildRequired": false,
+    "lastBuildDateTime": "Wed, 03 Aug 2016 09:40:03 GMT"
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationProject",
+      "templateVersion": "1.32.0",
+      "dateTimeStamp": "Tue, 26 Jul 2016 08:30:28 GMT"
+    }
+  ],
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+    }
+  },
+  "hcpdeploy": {
+    "account": "s0007737830trial",
+    "name": "sapdemostocklistv2",
+    "lastVersionWeTriedToDeploy": "1.0.2"
+  }
+}

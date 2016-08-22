@@ -1,0 +1,49 @@
+<mvc:View
+	controllerName="sap.demo.StockList.controller.StockList"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+>
+
+	<App>
+		<pages>
+			<Page
+				title="{i18n>LIST_TITLE}"
+				id="mainPageList"
+				showNavButton="false"
+				navButtonPress="handleNavBack"
+				enableScrolling="true"
+			>
+				<headerContent>
+					<core:Fragment fragmentName="sap.demo.StockList.view.fragment.stockList.HeaderContent" type="XML" />
+				</headerContent>
+				<subHeader>
+					<core:Fragment fragmentName="sap.demo.StockList.view.fragment.stockList.SubHeader" type="XML" />
+				</subHeader>
+				<content>
+					<core:Fragment fragmentName="sap.demo.StockList.view.fragment.stockList.FilterBar" type="XML" />
+					<List
+						id="stockListListStock"
+						growing="false"
+						growingThreshold="10"
+						busyIndicatorDelay="500"
+						enableBusyIndicator="true"
+						noDataText="{i18n>COM_NODATA_TEXT}"
+						mode="SingleSelectMaster"
+						selectionChange="onSelect"
+						includeItemInSelection="true"
+						items="{
+							path : 'listData>/StockList'
+						}"
+					>
+						<!--<headerToolbar>-->
+						<!--	<core:Fragment fragmentName="sap.demo.StockList.view.fragment.stockList.HeaderToolBar" type="XML" />-->
+						<!--</headerToolbar>-->
+						<core:Fragment fragmentName="sap.demo.StockList.view.fragment.stockList.ObjectListItem" type="XML" />
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

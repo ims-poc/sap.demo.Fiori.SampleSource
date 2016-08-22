@@ -1,0 +1,43 @@
+<mvc:View
+	controllerName="sap.demo.ConfirmChangePrice.controller.ChangePriceDetail"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+>
+
+	<App>
+		<pages>
+			<Page id="mainPageDetail"
+				title="{i18n>DETAIL_PAGE_TITLE}（{transferData>/UserSiteName}）"
+				showNavButton="true"
+				navButtonPress="handleNavBack"
+			>
+				<content>
+					<Table
+						id="confirmChangePriceTblProductPriceList"
+						noDataText="{i18n>COM_NODATA_TEXT}"
+						growing="false"
+						mode="None"
+						fixedLayout="false"
+						items="{
+                            path: 'tblData>/changeRequestForPriceDetail'
+                        }"
+					>
+						<headerToolbar>
+							<Toolbar>
+								<Title text="{i18n>LIST_PAGE_TBL_HEADER_INSTRUCTION_STARTDATE}：{transferData>/InstructionStartDate}" />
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<core:Fragment fragmentName="sap.demo.ConfirmChangePrice.view.fragment.TableColumnsForDetailPage" type="XML" />
+						</columns>
+						<items>
+							<core:Fragment fragmentName="sap.demo.ConfirmChangePrice.view.fragment.TableItemsForDetailPage" type="XML" />
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

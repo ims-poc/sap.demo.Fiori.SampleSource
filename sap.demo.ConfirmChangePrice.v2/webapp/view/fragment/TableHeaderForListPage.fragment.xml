@@ -1,0 +1,56 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<HBox width="100%">
+		<Label text="{i18n>LIST_PAGE_FILTER_TEXT}" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+		<FacetFilter
+			id="confirmChangePriceFctFlt"
+			type="Simple"
+			liveSearch="true"
+			showPersonalization="false"
+			showReset="true"
+			reset="onFacetFilterReset"
+			showPopoverOKButton="true"
+		>
+			<lists>
+				<FacetFilterList
+					title="{i18n>COM_FILTER_UNIFEDCOND}"
+					items="{filterUnifiedCond>/filterUnifiedCond}"
+					key="UnifiedCond"
+					listClose="setFilter"
+				>
+					<items>
+						<FacetFilterItem
+							key="{filterUnifiedCond>data}"
+							text="{filterUnifiedCond>text}"
+						/>
+					</items>
+				</FacetFilterList>
+				<FacetFilterList
+					title="{i18n>COM_FILTER_PRODUCT}"
+					items="{filterProduct>/filterProduct}"
+					key="Product"
+					listClose="setFilter"
+				>
+					<items>
+						<FacetFilterItem
+							key="{filterProduct>data}"
+							text="{filterProduct>text}"
+						/>
+					</items>
+				</FacetFilterList>
+				<FacetFilterList
+					title="{i18n>COM_FILTER_INS_STARTDATE}"
+					items="{filterInstructionStartDate>/filterInstructionStartDate}"
+					key="InstructionStartDate"
+					listClose="setFilter"
+				>
+					<items>
+						<FacetFilterItem
+							key="{filterInstructionStartDate>data}"
+							text="{filterInstructionStartDate>text}"
+						/>
+					</items>
+				</FacetFilterList>
+			</lists>
+		</FacetFilter>
+	</HBox>
+</core:FragmentDefinition>

@@ -1,0 +1,62 @@
+<mvc:View
+	controllerName="sap.demo.ConfirmTransfer.controller.shippingInstructionList"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:core="sap.ui.core"
+>
+
+	<App>
+		<pages>
+			<Page
+				id="mainPageList"
+				title=""
+				showNavButton="false"
+				navButtonPress="handleNavBack"
+				enableScrolling="true"
+			>
+			
+				<headerContent>
+					<Button id="shippingInstructionButtonUp" icon="sap-icon://media-reverse" press="onUpPress" tooltip="前ページ" enabled="false" />
+                    <Button id="shippingInstructionButtonDown" icon="sap-icon://media-play" press="onDownPress" tooltip="次ページ" enabled="false" />
+					<Button id="shippingInstructionBtnSelectStore" icon="sap-icon://value-help" tooltip="サイト切替" press="onValueHelpRequest" />
+				</headerContent>
+				
+				<content>
+					<!-- ValueHelpDialogがFilterBarが存在しないと動かないため、作るだけ作る -->
+					<fb:FilterBar visible="false" />
+					<RadioButtonGroup id="shippingRadioPrint" columns="2" width="100%" select="setFilter" >
+						<buttons>
+							<RadioButton id="radBtnPrintedHidden" text="{i18n>LIST_PRINT_HIDDEN_TEXT}"  />
+							<RadioButton id="radBtnPreprintVisible" text="{i18n>LIST_PRINT_VISIBLE_TEXT}" />
+						</buttons>
+					</RadioButtonGroup>
+					<Table
+						id="shippingInstructionList"
+						noDataText="{i18n>COM_TABLE_NODATA_TEXT}"
+						mode="MultiSelect"
+						includeItemInSelection="true"
+						fixedLayout="false"
+						items="{
+                            path: 'mockData>/ShippingInstruction'
+                        }"
+					>
+						<headerToolbar>
+							<core:Fragment fragmentName="sap.demo.ConfirmTransfer.view.fragment.TblHeaderToolBar" type="XML" />
+						</headerToolbar>
+						<columns>
+                            <core:Fragment fragmentName="sap.demo.ConfirmTransfer.view.fragment.TblColumns" type="XML" />
+                        </columns>
+                        <items>
+                            <core:Fragment fragmentName="sap.demo.ConfirmTransfer.view.fragment.TblColumnListItem" type="XML" />
+                        </items>
+					</Table>
+				</content>
+				<footer>
+                    <core:Fragment fragmentName="sap.demo.ConfirmTransfer.view.fragment.FooterContent" type="XML" />
+                </footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

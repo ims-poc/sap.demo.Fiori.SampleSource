@@ -1,0 +1,20 @@
+<core:FragmentDefinition  xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<Bar id="orderProductsBarSearch" >
+        <contentLeft>
+            <SearchField width="95%"
+                search="onSearch"
+                liveChange="on"
+                showRefreshButton="false"
+                showSearchButton="true"
+                selectOnFocus="false"
+                placeholder="単品検索"
+                id="orderProductsSearchFieldProducts">
+            </SearchField>
+            <Button
+				id="orderProductsButtonForDialog"
+				icon="sap-icon://bar-code"
+				press="onOpenDialog"
+        	/>
+        </contentLeft>
+    </Bar>
+</core:FragmentDefinition>

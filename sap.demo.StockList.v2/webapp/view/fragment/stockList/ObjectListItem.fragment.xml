@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ObjectListItem
+		id="stockListobjListItemStockListList"
+		title="{listData>Product}"
+		type="Active"
+		number="{
+			path : 'listData>ProductStock',
+			formatter : 'sap.demo.StockList.util.common.setCammaForNumber'
+		}"
+		numberUnit="{listData>ProductStockUnit}" >
+		<attributes>
+			<ObjectAttribute text="{listData>ProductName}" />
+			<ObjectAttribute text="{listData>ProductSupplier}" />
+			<ObjectAttribute text="{listData>ProductColor}　{listData>ProductSize}" />
+			<ObjectAttribute text="{listData>ProductColorSupplier}　{listData>ProductSizeSupplier}" />
+			<ObjectAttribute
+				text="{
+					path : 'listData>ProductPrice',
+					formatter : 'sap.demo.StockList.util.common.setCammaForNumber'
+				} {listData>Currency}"
+			/>
+		</attributes>
+	</ObjectListItem>
+</core:FragmentDefinition>

@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Column id="shippingInstructionDetailTblColItemNo">
+        <Label text="{i18n>DETAIL_TABLE_HEADER_ITEM_NO}" />
+    </Column>
+    <Column id="shippingInstructionDetailTblColProduct">
+        <Label text="{i18n>DETAIL_TABLE_HEADER_PRODUCTNAME}" />
+    </Column>
+    <Column id="shippingInstructionDetailTblColProductName">
+        <Label text="" />
+    </Column>
+    <Column id="shippingInstructionDetailTblColColor">
+        <Label text="{i18n>DETAIL_TABLE_HEADER_COLOR}" />
+    </Column>
+    <Column id="shippingInstructionDetailTblColSize">
+        <Label text="{i18n>DETAIL_TABLE_HEADER_SIZE}" />
+    </Column>
+    <Column id="shippingInstructionDetailTblColStock" hAlign="Right">
+        <Label text="{i18n>DETAIL_TABLE_HEADER_STOCK}" />
+    </Column>
+    <Column id="shippingInstructionDetailTblColPrice" hAlign="Right">
+        <Label text="{i18n>DETAIL_TABLE_HEADER_PRICE}" />
+    </Column>
+</core:FragmentDefinition>

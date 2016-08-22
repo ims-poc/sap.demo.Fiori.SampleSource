@@ -1,0 +1,44 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<ColumnListItem id="ColListItm" vAlign="Top">
+        <cells>
+            <VBox>
+                <Text text="{orderData>Product}" id="stockListTxtProduct" />
+                <Text text="{orderData>ProductName}" id="stockListTxtProductName" />
+                <Text text="{orderData>ProductForSupplier}" id="stockListTxtProductIDForSupplier" />
+            </VBox>
+            <Text id="stockListTxtProductColor" text="{orderData>ProductColor}" />
+            <Text id="stockListTxtProductSize" text="{orderData>ProductSize}" />
+            <HBox justifyContent="End">
+                <Input
+					id="stockListInputProductOrder"
+					type="Number"
+					textAlign="Right"
+					showValueStateMessage="false"
+                    value="{orderData>ProductOrder}"
+                    width="4em"
+                    change="onOrderQuantityChange"
+                    liveChange="onOrderQuantityLiveChange"
+                />
+                <HBox width="0.5em" />
+                <Text id="stockListTxtQuantityUnit" text="{orderData>ProductOrderUnit}" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+            </HBox>
+            <Text id="stockListTxtStockQuantity"
+				text="{
+					path : 'orderData>ProductStock',
+					formatter : 'sap.demo.StockList.util.common.setCammaForNumber'
+				} {orderData>ProductStockUnit}"
+            />
+            <Text id="stockListTxtAllocatedQuantity"
+				text="{
+					path : 'orderData>ProductAllocated',
+					formatter : 'sap.demo.StockList.util.common.setCammaForNumber'
+				} {orderData>ProductAllocatedUnit}" />
+            <!--<Text text="{-->
+            <!--	path : 'orderData>ProductPrice',-->
+            <!--	formatter : 'sap.demo.StockList.util.common.setCammaForNumber'-->
+            <!--	} {orderData>Currency}"-->
+            <!--/>-->
+            <u:Currency value="{orderData>ProductPrice}" currency="{orderData>Currency}" useSymbol="false" maxPrecision="1" />
+        </cells>
+    </ColumnListItem>
+</core:FragmentDefinition>

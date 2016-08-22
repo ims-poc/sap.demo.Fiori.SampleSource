@@ -1,0 +1,105 @@
+{
+	"StoreMaster" : 
+	[
+		{
+			"StoreID" : "10A1",
+			"StoreName" : "伊勢丹新宿本店紳士服"
+		},
+		{
+			"StoreID" : "10B1",
+			"StoreName" : "伊勢丹新宿本店婦人服"
+		},
+		{
+			"StoreID" : "10B2",
+			"StoreName" : "伊勢丹新宿本店リスタイルTOKYO"
+		},	
+		{
+			"StoreID" : "10C1",
+			"StoreName" : "伊勢丹新宿本店子供服"
+		},	
+		{
+			"StoreID" : "10D1",
+			"StoreName" : "伊勢丹新宿本店呉服・寝具・その他"
+		},	
+		{
+			"StoreID" : "10E1",
+			"StoreName" : "伊勢丹新宿本店生鮮食品"
+		},	
+		{
+			"StoreID" : "10E2",
+			"StoreName" : "伊勢丹新宿本店その他食品"
+		},	
+		{
+			"StoreID" : "10E3",
+			"StoreName" : "伊勢丹新宿本店クィーンズ伊勢丹"
+		},	
+		{
+			"StoreID" : "10Z1",
+			"StoreName" : "伊勢丹新宿本店婦人服（商品統括）"
+		},	
+		{
+			"StoreID" : "61A1",
+			"StoreName" : "三越恵比寿店紳士服・用品"
+		},	
+		{
+			"StoreID" : "61A2",
+			"StoreName" : "三越恵比寿店婦人服・用品"
+		},	
+		{
+			"StoreID" : "61B1",
+			"StoreName" : "三越恵比寿店呉服・寝具・その他"
+		},	
+		{
+			"StoreID" : "61C1",
+			"StoreName" : "三越恵比寿店生鮮食品"
+		},	
+		{
+			"StoreID" : "61C3",
+			"StoreName" : "三越恵比寿店その他食品"
+		},
+		{
+			"StoreID" : "1311",
+			"StoreName" : "佐野プレミアム・アウトレット"
+		},
+		{
+			"StoreID" : "1211",
+			"StoreName" : "イセタンミラー新宿店"
+		},
+		{
+			"StoreID" : "1111",
+			"StoreName" : "イセタンハネダストア(M)T1"
+		},
+		{
+			"StoreID" : "1121",
+			"StoreName" : "イセタンハネダストア(M)T2"
+		},
+		{
+			"StoreID" : "1131",
+			"StoreName" : "イセタンハネダストア(L)T1"
+		},
+		{
+			"StoreID" : "32A1",
+			"StoreName" : "岩田屋本店紳士服・用品"
+		},
+		{
+			"StoreID" : "32A2",
+			"StoreName" : "岩田屋本店婦人服・用品"
+		},
+		{
+			"StoreID" : "32A3",
+			"StoreName" : "岩田屋本店子供服・用品"
+		},
+		{
+			"StoreID" : "32B1",
+			"StoreName" : "岩田屋本店呉服・寝具・その他"
+		},
+		{
+			"StoreID" : "32C1",
+			"StoreName" : "岩田屋本店生鮮食品"
+		},
+		{
+			"StoreID" : "32C2",
+			"StoreName" : "岩田屋本店その他食品"
+		}
+	]
+}

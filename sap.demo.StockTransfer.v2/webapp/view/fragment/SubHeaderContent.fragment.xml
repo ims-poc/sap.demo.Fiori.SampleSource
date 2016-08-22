@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Bar id="stockTransferBarSearch" >
+        <contentLeft>
+            <SearchField width="95%"
+                search="onSearch"
+                liveChange="onL"
+                showRefreshButton="false"
+                showSearchButton="true"
+                selectOnFocus="false"
+                placeholder="単品検索"
+                id="stockTransferSearchFieldProducts"
+            />
+            <Button
+				id="orderProductsButtonForDialog"
+				icon="sap-icon://bar-code"
+				press="onOpenDialog"
+				tooltip="バーコード読込"
+			/>
+        </contentLeft>
+    </Bar>
+</core:FragmentDefinition>
