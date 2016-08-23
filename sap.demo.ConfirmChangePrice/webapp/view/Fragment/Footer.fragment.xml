@@ -1,8 +1,0 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-	<Toolbar id="confirmChangePriceToolbarFooter" width="100%">
-		<HBox width="100%" alignItems="Start" justifyContent="End">
-			<!--<Button id="shippingInstructionBtnPrint" text="印刷実行" type="Accept" press="onScanButtonPress" />-->
-			<Button id="confirmChangePriceBtnExecutePrint" icon="sap-icon://print" tooltip="印刷実行" press="onExePrint" />
-		</HBox>
-	</Toolbar>
-</core:FragmentDefinition>
