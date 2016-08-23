@@ -1,0 +1,65 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:fb="sap.ui.comp.filterbar">
+	<fb:FilterBar
+		id="stockTransferFilBar"
+		advancedMode="true"
+		filterBarExpanded="false"
+		showRestoreButton="false"
+		showClearButton="false"
+		showGoOnFB="false"
+	>
+	<!--searchEnabled="false"-->
+		<fb:filterItems>
+			<fb:FilterItem name="CommodityCode" label="{i18n>TITLE_FILTER_COMMODITY_CD}">
+				<fb:control>
+					<!--<HBox width="100%">-->
+						<Input
+							id="stockTransferInpCommCdFilter"
+							value=""
+							showValueHelp="true"
+							valueHelpOnly="false"
+							valueHelpRequest="onValueHelpForCommodityCode"
+							submit="getText"
+						/>
+					<!--	<HBox width="2em" />-->
+						
+					<!--</HBox>-->
+				</fb:control>
+			</fb:FilterItem>
+			<fb:FilterItem name="TradeCondition" label="{i18n>TITLE_FILTER_TRADE_COND}">
+				<fb:control>
+					<!--<HBox width="100%">-->
+						<Input
+							id="stockTransferInpTradeCondFilter"
+							value=""
+							showValueHelp="true"
+							valueHelpOnly="false"
+							valueHelpRequest="onValueHelpForTradeCondition"
+							submit="getText"
+						/>
+					<!--	<HBox width="2em" />-->
+						
+					<!--</HBox>-->
+				</fb:control>
+			</fb:FilterItem>
+			<fb:FilterItem name="Season" label="{i18n>TITLE_FILTER_SEASON}">
+				<fb:control>
+					<!--<HBox width="100%">-->
+						<Input
+							id="stockTransferInpSeasonFilter"
+							value=""
+							showValueHelp="true"
+							valueHelpOnly="false"
+							valueHelpRequest="onValueHelpForSeason"
+							submit="getText"
+						/>
+					<!--	<HBox width="2em" />-->
+						
+					<!--</HBox>-->
+				</fb:control>
+			</fb:FilterItem>
+		</fb:filterItems>
+	</fb:FilterBar>
+	<Text id="stockTransferInpCommCdText" visible="false" />
+	<Text id="stockTransferInpTradeCondText" visible="false" />
+	<Text id="stockTransferInpSeasonText" visible="false" />
+</core:FragmentDefinition>

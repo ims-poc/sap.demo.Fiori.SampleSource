@@ -1,0 +1,101 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Table
+		id="stockListTblStockPerSite"
+		growing="false"
+		growingThreshold="5"
+		busyIndicatorDelay="500"
+		enableBusyIndicator="true"
+		noDataText="{i18n>COM_NODATA_TEXT}"
+		includeItemInSelection="true"
+		fixedLayout="false"
+		items="{
+            path: 'listData>/ProductStockListPerSite'
+        }"
+	>
+		<headerToolbar>
+			<Toolbar>
+				<FacetFilter
+					id="stockListFacetFilterSite"
+					type="Simple"
+					liveSearch="true"
+					showPersonalization="false"
+					showReset="true"
+					reset="onFacetFilterReset"
+					showPopoverOKButton="true"
+				>
+					<lists>
+						<FacetFilterList
+							title="{i18n>DETAIL_FILTER_TITLE}"
+							items="{filterSite>/filterSite}"
+							key="DepartmentStore"
+							mode="MultiSelect"
+							listClose="setFilter"
+						>
+							<items>
+								<FacetFilterItem
+									key="{filterSite>data}"
+									text="{filterSite>text}"
+								/>
+							</items>
+						</FacetFilterList>
+					</lists>
+				</FacetFilter>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="stockListTblColSite">
+				<Label text="{i18n>DETAIL_TBL_HEADER_SITE}" />
+			</Column>
+            <Column id="stockListTblColSiteNm">
+                <Label text="{i18n>DETAIL_TBL_HEADER_SITE_NM}" />
+            </Column>
+            <Column id="stockListTblColQuantity" hAlign="Right">
+                <Label text="{i18n>DETAIL_TBL_HEADER_QUANTITY}" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem
+				id="stockListColListItmSite"
+				vAlign="Middle"
+				type="Navigation"
+				press="onSelect"
+			>
+                <cells>
+                	<Text id="stockListTxtSite" text="{listData>Site}" wrapping="true" />
+					<Text id="stockListTxtSiteName" text="{listData>SiteName}" wrapping="true" />
+                    <Text id="stockListTxtQuantity"
+						text="{
+							path : 'listData>StockQuantity',
+							formatter : 'sap.demo.StockList.util.common.setCammaForNumber'
+						} {listData>ProductStockUnit}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+	</Table>
+</core:FragmentDefinition>
+
+<!--<FacetFilter-->
+<!--					id="stockListFacetFilterSite"-->
+<!--					type="Simple"-->
+<!--					lists="{listData>/DetailFilter}"-->
+<!--					liveSearch="true"-->
+<!--					showPersonalization="false"-->
+<!--					showReset="true"-->
+<!--					reset="onFacetFilterReset">-->
+<!--					<lists>-->
+<!--						<FacetFilterList-->
+<!--							title="{listData>type}"-->
+<!--							items="{listData>values}"-->
+<!--							key="{listData>filterKey}"-->
+<!--							mode="MultiSelect"-->
+<!--							listOpen="onFacetFilterListOpen"-->
+<!--							listClose="onFacetFilterListClose">-->
+<!--							<items>-->
+<!--								<FacetFilterItem-->
+<!--									key="{listData>data}"-->
+<!--									text="{listData>text}"-->
+<!--								/>-->
+<!--							</items>-->
+<!--						</FacetFilterList>-->
+<!--					</lists>-->
+<!--				</FacetFilter>-->

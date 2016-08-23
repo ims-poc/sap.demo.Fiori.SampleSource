@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<ColumnListItem
+		id="shippingInstructionDetailColListItm"
+		vAlign="Middle"
+		type="Inactive">
+		<cells>
+			<Text id="shippingInstructionTxtItemNo" text="{mockData>ItemNo}" />
+			<Text id="shippingInstructionDetailProduct" text="{mockData>Product}" wrapping="true" />
+			<Text id="shippingInstructionDetailProductName" text="{mockData>ProductName}" wrapping="true" />
+            <Text id="shippingInstructionDetailProductColor" text="{mockData>ProductColor}" wrapping="true" />
+            <Text id="shippingInstructionDetailProductSize" text="{mockData>ProductSize}" wrapping="true" />
+            <Text id="shippingInstructionTxtProductStock"
+				text="{
+					path : 'mockData>ProductStock',
+					formatter : 'sap.demo.ConfirmTransfer.util.Formatter.setCammaForNumber'
+				} {mockData>ProductStockUnit}" />
+            <u:Currency id="shippingInstructionCurProductPrice" value="{mockData>ProductPrice}" currency="{mockData>Currency}" useSymbol="false" maxPrecision="1" />
+        </cells>
+    </ColumnListItem>
+</core:FragmentDefinition>

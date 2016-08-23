@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Column id="shippingInstructionTblColPrintResult" hAlign="Center">
+        <Label text="{i18n>LIST_TABLE_HEADER_PRINT_RESULT}" />
+    </Column>
+    <Column id="shippingInstructionTblColShippingInstructionNo">
+        <Label text="{i18n>LIST_TABLE_HEADER_SHIPPING_INSTRUCTION_NO}" />
+    </Column>
+    <Column id="shippingInstructionTblColPurchaseGrp">
+		<Label text="{i18n>LIST_TABLE_HEADER_PURCHASE_GRP}" />
+    </Column>
+    <Column id="shippingInstructionTblColShipDate">
+		<Label text="{i18n>LIST_TABLE_HEADER_SHIP_DATE}" />
+    </Column>
+    <Column id="shippingInstructionTblColShipToSite">
+		<Label text="{i18n>LIST_TABLE_HEADER_SHIP_TO_SITE}" />
+    </Column>
+    <Column hAlign="Right">
+    	<Label text="{i18n>LIST_TABLE_HEADER_SUMOFQUANTITY}" />
+    </Column>
+    <Column id="shippingInstructionTblColRegisterUser">
+        <Label text="{i18n>LIST_TABLE_HEADER_REGISTER_USER}" />
+    </Column>
+</core:FragmentDefinition>

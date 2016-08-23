@@ -1,0 +1,59 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Toolbar>
+		<HBox width="100%">
+			<Label text="絞込：" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+			<FacetFilter
+				id="stockListFacetFilterStyle"
+				type="Simple"
+				liveSearch="true"
+				showPersonalization="false"
+				showReset="true"
+				reset="onFacetFilterReset"
+				showPopoverOKButton="true"
+			>
+				<lists>
+					<FacetFilterList
+						title="{i18n>LIST_FILTER_TITLE_STYLE}"
+						items="{filterStyle>/filterStyle}"
+						key="ProductStyle"
+						mode="MultiSelect"
+						listClose="setFilter"
+					>
+						<items>
+							<FacetFilterItem
+								key="{filterStyle>data}"
+								text="{filterStyle>text}"
+							/>
+						</items>
+					</FacetFilterList>
+				</lists>
+			</FacetFilter>
+		</HBox>
+	</Toolbar>
+</core:FragmentDefinition>
+
+			<!--<FacetFilter-->
+			<!--	id="stockListFacetFilterStyle"-->
+			<!--	type="Simple"-->
+			<!--	lists="{listData>/ListFilter}"-->
+			<!--	liveSearch="true"-->
+			<!--	showPersonalization="false"-->
+			<!--	showReset="true"-->
+			<!--	reset="onFacetFilterReset">-->
+			<!--	<lists>-->
+			<!--		<FacetFilterList-->
+			<!--			title="{listData>type}"-->
+			<!--			items="{listData>values}"-->
+			<!--			key="{listData>filterKey}"-->
+			<!--			mode="MultiSelect"-->
+			<!--			listOpen="onFacetFilterListOpen"-->
+			<!--			listClose="setFilter">-->
+			<!--			<items>-->
+			<!--				<FacetFilterItem-->
+			<!--					key="{listData>data}"-->
+			<!--					text="{listData>text}"-->
+			<!--				/>-->
+			<!--			</items>-->
+			<!--		</FacetFilterList>-->
+			<!--	</lists>-->
+			<!--</FacetFilter>-->

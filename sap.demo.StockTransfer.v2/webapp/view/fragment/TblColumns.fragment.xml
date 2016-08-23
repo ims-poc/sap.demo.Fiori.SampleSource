@@ -1,0 +1,26 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Column vAlign="Middle" id="stockTransferColumnProduct">
+		<Label text="{i18n>TITLE_PRODUCT}" />
+	</Column>
+	<Column vAlign="Middle" id="stockTransferColumnProductColor">
+		<Label text="{i18n>TITLE_PRODUCT_COLOR}" />
+	</Column>
+	<Column vAlign="Middle" id="stockTransferColumnProductSize">
+		<Label text="{i18n>TITLE_PRODUCT_SIZE}" />
+	</Column>
+	<Column vAlign="Middle" id="stockTransferColumnSupplierSite">
+		<Label text="{i18n>TITLE_SUPPLIER_SITE}" />
+	</Column>
+	<Column vAlign="Middle" id="stockTransferColumnOrderQuantity" hAlign="Right">
+		<Label text="{i18n>TITLE_ORDER_QUANTITY}" />
+	</Column>
+	<Column vAlign="Middle" id="stockTransferColumnStockQuantity" hAlign="Right">
+		<Label text="{i18n>TITLE_STOCK_QUANTITY}" />
+	</Column>
+	<Column vAlign="Middle" id="stockTransferColumnScheduledQuantity" hAlign="Right">
+		<Label text="{i18n>TITLE_SCHEDULED_QUANTITY}" />
+	</Column>
+	<Column vAlign="Middle" id="stockTransferColumnSalesPrice" hAlign="Right">
+		<Label text="{i18n>TITLE_SALES_PRICE}" />
+	</Column>
+</core:FragmentDefinition>

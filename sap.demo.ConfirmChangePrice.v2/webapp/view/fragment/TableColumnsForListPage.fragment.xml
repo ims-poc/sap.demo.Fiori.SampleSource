@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<!--<Column id="confirmChangePriceTblColPrintResult" vAlign="Middle" hAlign="Left" width="4em">-->
+ <!--       <Label text="{i18n>LIST_PAGE_TBL_HEADER_PRINTED}" />-->
+ <!--   </Column>-->
+    <Column id="confirmChangePriceTblColParentInstructionNo" vAlign="Middle" hAlign="Left">
+        <Label text="{i18n>LIST_PAGE_TBL_HEADER_CHILDINSTRUCTION_NUM}" />
+    </Column>
+    <Column id="confirmChangePriceTblColUnifiedCond" vAlign="Middle" hAlign="Left">
+        <Label text="{i18n>LIST_PAGE_TBL_HEADER_UNIFIEDCOND}" />
+    </Column>
+    <Column id="confirmChangePriceTblColUnifiedCondNm" vAlign="Middle" hAlign="Left">
+        <Label text="{i18n>LIST_PAGE_TBL_HEADER_UNIFIEDCOND_NM}" />
+    </Column>
+    <Column id="confirmChangePriceTblColInstructionStartDate" vAlign="Middle" hAlign="Left">
+        <Label text="{i18n>LIST_PAGE_TBL_HEADER_INSTRUCTION_STARTDATE}" />
+    </Column>
+    <Column id="confirmChangePriceTblColRegister" vAlign="Middle" hAlign="Left">
+        <Label text="{i18n>LIST_PAGE_TBL_HEADER_REGISTER}" />
+    </Column>
+</core:FragmentDefinition>

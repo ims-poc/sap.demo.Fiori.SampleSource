@@ -1,0 +1,88 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Toolbar  id="stockTransferToolBarTblHeader">
+		<HBox width="100%">
+			<Label id="stockTransferLblFilter" text="{i18n>TITLE_FILTER}" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+			<FacetFilter
+				id="stockTransferFacetFilter"
+				type="Simple"
+				liveSearch="true"
+				showPersonalization="false"
+				showReset="true"
+				reset="onFacetFilterReset"
+				showPopoverOKButton="true"
+			>
+				<lists>
+					<FacetFilterList
+						title="{i18n>TITLE_FILTER_COMMODITY_CD}"
+						items="{setFilterCommodityCode>/filterCommodityCode}"
+						listClose="setFilter"
+						key="CommodityCode"
+					>
+						<items>
+							<FacetFilterItem
+								key="{setFilterCommodityCode>data}"
+								text="{setFilterCommodityCode>text}"
+							/>
+						</items>
+					</FacetFilterList>
+					<FacetFilterList
+						title="{i18n>TITLE_FILTER_TRADE_COND}"
+						items="{setFilterTradeCond>/filterTradeCond}"
+						listClose="setFilter"
+						key="TradeCondition"
+					>
+						<items>
+							<FacetFilterItem
+								key="{setFilterTradeCond>data}"
+								text="{setFilterTradeCond>text}"
+							/>
+						</items>
+					</FacetFilterList>
+					<FacetFilterList
+						title="{i18n>TITLE_FILTER_SEASON}"
+						items="{setFilterSeason>/filterSeason}"
+						listClose="setFilter"
+						key="Season"
+					>
+						<items>
+							<FacetFilterItem
+								key="{setFilterSeason>data}"
+								text="{setFilterSeason>text}"
+							/>
+						</items>
+					</FacetFilterList>
+				</lists>
+			</FacetFilter>
+		</HBox>
+	</Toolbar>
+</core:FragmentDefinition>
+
+
+			<!--<FacetFilter-->
+			<!--	id="stockTransferFacetFilter"-->
+			<!--	type="Simple"-->
+			<!--	lists="{listData>/ProductCollectionStats/Filters}"-->
+			<!--	liveSearch="true"-->
+			<!--	showPersonalization="false"-->
+			<!--	showReset="true"-->
+			<!--	reset="onFacetFilterReset"-->
+			<!--	showPopoverOKButton="true"-->
+			<!-->-->
+			<!--	<lists>-->
+			<!--		<FacetFilterList-->
+			<!--			title="{listData>type}"-->
+			<!--			growing="false"-->
+			<!--			items="{listData>values}"-->
+			<!--			key="{listData>filterKey}"-->
+			<!--			listOpen="onFacetFilterListOpen"-->
+			<!--			listClose="setFilter"-->
+			<!--		>-->
+			<!--			<items>-->
+			<!--				<FacetFilterItem-->
+			<!--					key="{listData>data}"-->
+			<!--					text="{listData>text}"-->
+			<!--				/>-->
+			<!--			</items>-->
+			<!--		</FacetFilterList>-->
+			<!--	</lists>-->
+			<!--</FacetFilter>-->

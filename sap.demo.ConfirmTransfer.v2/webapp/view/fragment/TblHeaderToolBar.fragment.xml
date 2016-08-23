@@ -1,0 +1,63 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Toolbar>
+		<HBox width="100%">
+			<HBox width="90%">
+				<Label text="{i18n>COM_FILTER_TEXT}" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+				<FacetFilter
+					id="shippingInstructionFacetFilter"
+					type="Simple"
+					liveSearch="true"
+					showPersonalization="false"
+					showReset="true"
+					reset="onFacetFilterReset"
+					showPopoverOKButton="true"
+				>
+					<lists>
+						<FacetFilterList
+							title="商品"
+							items="{filterProduct>/filterProduct}"
+							key="Product"
+							listClose="setFilter"
+						>
+							<items>
+								<FacetFilterItem
+									key="{filterProduct>data}"
+									text="{filterProduct>text}"
+								/>
+							</items>
+						</FacetFilterList>
+						<FacetFilterList
+							title="出荷先"
+							items="{filterShipToSite>/filterShipToSite}"
+							key="ShipToSite"
+							listClose="setFilter"
+						>
+							<items>
+								<FacetFilterItem
+									key="{filterShipToSite>data}"
+									text="{filterShipToSite>text}"
+								/>
+							</items>
+						</FacetFilterList>
+						<FacetFilterList
+							title="スタイル"
+							items="{filterStyle>/filterStyle}"
+							key="ProductStyle"
+							listClose="setFilter"
+						>
+							<items>
+								<FacetFilterItem
+									key="{filterStyle>data}"
+									text="{filterStyle>text}"
+								/>
+							</items>
+						</FacetFilterList>
+					</lists>
+				</FacetFilter>
+			</HBox>
+			<HBox width="10%" justifyContent="End">
+				<Button id="shipppingInstructionBtnTblSort" icon="sap-icon://drop-down-list" press="onPressSortDialog" tooltip="Sort" />
+			</HBox>
+		</HBox>
+	</Toolbar>
+</core:FragmentDefinition>

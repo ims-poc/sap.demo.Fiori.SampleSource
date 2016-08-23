@@ -1,0 +1,97 @@
+<mvc:View
+    controllerName="sap.demo.OrderProducts.controller.ProductDetail"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.commons"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form">
+    
+	<App>
+		<pages>
+			<Page id="orderProductsDetailPage" title="{i18n>DETAIL_PAGE_TITLE} （{transferData>/UserSiteName}）" showNavButton="true" navButtonPress="handleNavBack">
+                <!--<headerContent>-->
+                    <!--<Button id="orderProductsButtonUp" icon="sap-icon://up" press="onUpPress"  enabled="false" />-->
+                    <!--<Button id="orderProductsButtonDown" icon="sap-icon://down" press="onDownPress" enabled="false" />-->
+                <!--</headerContent>-->
+                <content>
+                    <HBox width="100%" justifyContent="SpaceBetween" alignItems="Start" id="orderProductsHBoxHeader">
+                        <VBox id="orderProductsVBoxProduct" width="60%">
+							<Panel width="100%" class="sapRTSTOrdProdPanelCalendar" id="orderProductsPanelCalendar" headerText="{i18n>TITLE_PRODUCT_DETAIL}">
+								<ObjectHeader title="{transferData>/Product}" id="orderProductsOHProduct">
+									<attributes>
+										<ObjectAttribute id="orderProductsObjAttrProductID" text="{transferData>/ProductName}" />
+										<ObjectAttribute id="orderProductsObjAttrSupplierProductID" text="{transferData>/ProductForSupplier}" />
+									</attributes>
+								</ObjectHeader>
+								<ObjectHeader>
+									<attributes>
+										<ObjectAttribute id="orderProductsObjAttrProductColor" title="{i18n>TITLE_PRODUCT_COLOR}" text="{transferData>/ProductColor}" />
+										<ObjectAttribute id="orderProductsObjAttrProductSize" title="{i18n>TITLE_PRODUCT_SIZE}" text="{transferData>/ProductSize}" />
+										<ObjectAttribute id="orderProductsObjAttrSupplierProductColor" title="{i18n>TITLE_SUPPLIER_COLOR}" text="{transferData>/SupplierProductColor}" />
+										<ObjectAttribute id="orderProductsObjAttrSupplierProductSize" title="{i18n>TITLE_SUPPLIER_SIZE}" text="{transferData>/SupplierProductSize}" />
+										<ObjectAttribute id="orderProductsObjAttrSalesPrice" title="{i18n>TITLE_SALES_PRICE}"
+											text="{
+												path : 'transferData>/ProductPrice',
+												formatter : 'sap.demo.OrderProducts.util.common.setCammaForNumber'
+											} {transferData>/Currency}" />
+										<ObjectAttribute id="orderProductsObjAttrStock" title="{i18n>TITLE_STOCK_QUANTITY}"
+											text="{
+												path : 'transferData>/ProductStock',
+												formatter : 'sap.demo.OrderProducts.util.common.setCammaForNumber'
+											} {transferData>/ProductStockUnit}" />
+										<ObjectAttribute id="orderProductsObjAttrTradeCond" title="{i18n>TITLE_TRADE_CONDITION}" text="{transferData>/TradeCondition}" />
+										<ObjectAttribute id="orderProductsObjAttrComCd" title="{i18n>TITLE_COMMODITY_CODE}" text="{transferData>/CommodityCodeName}" />
+									</attributes>
+								</ObjectHeader>
+							</Panel>
+                        </VBox>
+                        <VBox alignItems="Start" width="40%" id="orderProductsVBoxQuantity">
+                            <Panel width="100%" headerText="{i18n>TITLE_ORDER_INFORMATION}">
+								<HBox width="100%" justifyContent="End">
+									<Label text="{i18n>TITLE_ORDER_QUANTITY}" id="orderProductsLblQuantity" width="18em" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+									<Input id="orderProductsInputOrderQuantity" type="Number" maxLength="4" width="4rem" textAlign="Right" showValueStateMessage="false"
+										value="{
+											path : 'transferData>/ProductOrder',
+											formmater : 'sap.demo.OrderProducts.util.common.setCammaForNumber'
+										}" change="onOrderQuantityChange" liveChange="onOrderQuantityLiveChange" />
+									<Text id="orderProductsTextSpace" text="" width="1rem" />
+									<Text id="orderProductsTextUnit" text="{transferData>/ProductOrderUnit}" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+								</HBox>
+								<HBox width="100%" justifyContent="End" id="orderProductsHBoxInspection">
+									<Label text="{i18n>TITLE_PRODUCT_INSPECTION}" id="orderProductsInspection" width="8em" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+									<Text id="orderProductsTxtInspectionLocation" visible="false" />
+									<MultiInput id="orderProductsMultiInputInspectionLocation" valueHelpRequest="onPressValueHelp" valueHelpOnly="true" width="15em" />
+								</HBox>
+								<HBox width="100%" justifyContent="End">
+	                            	<Label text="{i18n>TITLE_PRODUCT_EOS_DIV}" id="orderProductsEOSDiv" width="8em" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+	                            	<ComboBox id="orderProductsEOSCombo" width="15em">
+										<core:Item key="ES001" text="EOS区分01" />
+										<core:Item key="ES002" text="EOS区分02" />
+										<core:Item key="ES003" text="EOS区分03" />
+										<core:Item key="ES004" text="EOS区分04" />
+										<core:Item key="ES005" text="EOS区分05" />
+									</ComboBox>
+	                            </HBox>
+                            </Panel>
+                        </VBox>
+                    </HBox>
+                </content>
+                <footer>
+					<Toolbar id="orderProductsToolbarFooter" width="100%">
+						<HBox width="25%" />
+						<HBox width="50%" justifyContent="Center">
+							<Button id="orderProductsButtonLess" icon="sap-icon://less" press="onLessButtonPress" />
+							<HBox width="40%" />
+							<Button id="orderProductsButtonAdd" icon="sap-icon://add" press="onAddButtonPress" />
+						</HBox>
+						<HBox width="25%" justifyContent="End">
+							<Button id="orderProductsButtonConfirm" type="Accept" text="保存" press="onSave" />
+						</HBox>
+					</Toolbar>
+                </footer>
+            </Page>
+        </pages>
+	</App>
+</mvc:View>

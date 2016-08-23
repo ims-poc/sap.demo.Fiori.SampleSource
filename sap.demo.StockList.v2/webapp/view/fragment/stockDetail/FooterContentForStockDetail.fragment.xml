@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Toolbar id="stockListToolbarForStockDetailFooter" width="100%">
+		<HBox width="100%" alignItems="Start" justifyContent="End">
+			<Button id="stockListBtnOrderProducts" text="発注" icon="sap-icon://action" tooltip="Move to Order Products" press="navToOrderProducts" />
+		</HBox>
+	</Toolbar>
+</core:FragmentDefinition>

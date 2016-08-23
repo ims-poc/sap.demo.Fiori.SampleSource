@@ -1,0 +1,39 @@
+<core:FragmentDefinition  xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<VBox id="orderProductsVBoxProductAttributes">
+        <Link text="{listData>Product}" id="orderProductsTextProductID" press="navigate" enabled="{view>/inputEnabled}" />
+        <Text text="{listData>ProductName}" id="orderProductsTextProductName" />
+        <Text text="{listData>ProductForSupplier}" id="orderProductsTextProductIDForSupplier" />
+    </VBox>
+    <Text id="orderProductsTextProductColor" text="{listData>ProductColor}" />
+    <Text id="orderProductsTextProductSize" text="{listData>ProductSize}" />
+    <HBox id="orderProductsHBoxOrderQuantityTablet" justifyContent="End">
+        <Input
+			id="orderProductsInputProductOrder"
+			type="Number"
+			textAlign="Right"
+			maxLength="4"
+			showValueStateMessage="false"
+            value="{
+				path : 'listData>ProductOrder',
+				formatter : 'sap.demo.OrderProducts.util.common.setCammaForNumber'
+            }"
+            width="4em"
+            change="onOrderQuantityChange"
+            liveChange="onOrderQuantityLiveChange"
+        />
+        <HBox width="0.5em" />
+        <Text id="orderProductsTextQuantityUnitTablet" wrapping="false" text="{listData>ProductOrderUnit}" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+    </HBox>
+    <Text id="orderProductsTextStockQuantity"
+		text="{
+			path : 'listData>ProductStock',
+			formatter : 'sap.demo.OrderProducts.util.common.setCammaForNumber'
+		} {listData>ProductStockUnit}"
+    />
+    <Text id="orderProductsTextScheduledQuantity"
+		text="{
+			path : 'listData>ProductScheduledStock',
+			formatter : 'sap.demo.OrderProducts.util.common.setCammaForNumber'
+		} {listData>ProductScheduledStockUnit}" />
+    <u:Currency value="{listData>ProductPrice}" currency="{listData>Currency}" useSymbol="false" maxPrecision="1" />
+</core:FragmentDefinition>

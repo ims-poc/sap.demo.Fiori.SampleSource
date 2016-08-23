@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:fb="sap.ui.comp.filterbar">
+	<fb:FilterBar
+		id="stockTransferFilBar"
+		advancedMode="true"
+		filterBarExpanded="false"
+		showRestoreButton="false"
+		showClearButton="false"
+		showGoOnFB="false"
+	>
+	<!--searchEnabled="false"-->
+		<fb:filterItems>
+			<fb:FilterItem name="CommodityCode" label="{i18n>LIST_FILTER_TITLE_STYLE}">
+				<fb:control>
+					<!--<HBox width="100%">-->
+						<Input
+							id="stockListInpStyleFilter"
+							value=""
+							showValueHelp="true"
+							valueHelpOnly="false"
+							valueHelpRequest="onValueHelpForStyle"
+							submit="getText"
+						/>
+					<!--	<HBox width="2em" />-->
+						
+					<!--</HBox>-->
+				</fb:control>
+			</fb:FilterItem>
+		</fb:filterItems>
+	</fb:FilterBar>
+	<Text id="stockListInpStyleText" visible="false" />
+</core:FragmentDefinition>

@@ -1,0 +1,112 @@
+<mvc:View
+    controllerName="sap.demo.StockTransfer.controller.ProductList"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:u="sap.ui.unified"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+>
+	<App>
+		<pages>
+			<Page id="mainListPage" title="">
+                <headerContent>
+					<Button id="stockTransferButtonUp" icon="sap-icon://media-reverse" press="onUpPress" tooltip="前ページ" enabled="false" />
+                    <Button id="stockTransferButtonDown" icon="sap-icon://media-play" press="onDownPress" tooltip="次ページ" enabled="false" />
+					<Button
+						id="stockTransferBtnSelectStore"
+						icon="sap-icon://value-help"
+						tooltip="サイト切替"
+						press="onValueHelpRequest"
+					/>
+                </headerContent>
+                <subHeader>
+                    <core:Fragment fragmentName="sap.demo.StockTransfer.view.fragment.SubHeaderContent" type="XML" />
+                </subHeader>
+                <content>
+					<core:Fragment fragmentName="sap.demo.StockTransfer.view.fragment.FilterBar" type="XML" />
+					<!--<HBox width="98%" justifyContent="Center">-->
+					<!--	<HBox width="33%">-->
+					<!--		<Text text="{i18n>TITLE_FILTER_COMMODITY_CD}：" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />-->
+					<!--		<Input-->
+					<!--			id="stockTransferInpCommCdFilter"-->
+					<!--			value=""-->
+					<!--			showValueHelp="true"-->
+					<!--			valueHelpOnly="false"-->
+					<!--			valueHelpRequest="onValueHelpForCommodityCode"-->
+					<!--			width="8em"-->
+					<!--			submit="getText"-->
+					<!--		/>-->
+					<!--		<HBox width="2em" />-->
+					<!--		<Text id="stockTransferInpCommCdText" />-->
+					<!--	</HBox>-->
+					<!--	<HBox width="33%">-->
+					<!--		<Text text="{i18n>TITLE_FILTER_TRADE_COND}：" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />-->
+					<!--		<Input-->
+					<!--			id="stockTransferInpTradeCondFilter"-->
+					<!--			value=""-->
+					<!--			showValueHelp="true"-->
+					<!--			valueHelpOnly="false"-->
+					<!--			valueHelpRequest="onValueHelpForTradeCondition"-->
+					<!--			width="8em"-->
+					<!--			submit="getText"-->
+					<!--		/>-->
+					<!--		<HBox width="2em" />-->
+					<!--		<Text id="stockTransferInpTradeCondText" />-->
+					<!--	</HBox>-->
+					<!--	<HBox width="33%">-->
+					<!--		<Text text="{i18n>TITLE_FILTER_SEASON}：" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />-->
+					<!--		<Input-->
+					<!--			id="stockTransferInpSeasonFilter"-->
+					<!--			value=""-->
+					<!--			showValueHelp="true"-->
+					<!--			valueHelpOnly="false"-->
+					<!--			valueHelpRequest="onValueHelpForSeason"-->
+					<!--			width="8em"-->
+					<!--			submit="getText"-->
+					<!--		/>-->
+					<!--		<HBox width="2em" />-->
+					<!--		<Text id="stockTransferInpSeasonText" />-->
+					<!--	</HBox>-->
+					<!--</HBox>-->
+                    <Table
+                        id="stockTransferTableProducts"
+                        inset="false"
+                        growing="false"
+						growingThreshold="10"
+						busyIndicatorDelay="500"
+						enableBusyIndicator="true"
+                        noDataText="{i18n>COM_NODATA_TEXT}"
+                        showUnread="true"
+                        mode="SingleSelectMaster"
+                        visible="true"
+                        selectionChange="onSelectionChange"
+                        updateFinished="onListUpdateFinished"
+                        items="{
+                            path: 'listData>/ProductCollection'
+                        }"
+                    >
+						<!--<headerToolbar>-->
+						<!--	<core:Fragment fragmentName="sap.demo.StockTransfer.view.fragment.TblHeaderToolBar" type="XML" />-->
+						<!--	<core:Fragment fragmentName="sap.demo.StockTransfer.view.fragment.FilterBar" type="XML" />-->
+						<!--</headerToolbar>-->
+                        <columns>
+                            <core:Fragment fragmentName="sap.demo.StockTransfer.view.fragment.TblColumns" type="XML" />
+                        </columns>
+                        <items>
+                            <ColumnListItem id="ColListItm" vAlign="Top">
+                                <cells>
+                                    <core:Fragment fragmentName="sap.demo.StockTransfer.view.fragment.TblColumnListItem" type="XML" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </content>
+                <footer>
+                    <core:Fragment fragmentName="sap.demo.StockTransfer.view.fragment.FooterContent" type="XML" />
+                </footer>
+            </Page>
+		</pages>
+	</App>
+</mvc:View>

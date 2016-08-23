@@ -1,0 +1,71 @@
+<mvc:View
+	controllerName="sap.demo.UserSetting.controller.UserSetting"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:fb="sap.ui.comp.filterbar"
+>
+	<App>
+		<pages>
+			<Page title="{i18n>PAGE_TITLE}">
+				<content>
+					<!-- ValueHelpDialogがFilterBarが存在しないと動かないため、作るだけ作る -->
+					<fb:FilterBar visible="false" />
+
+					<f:SimpleForm
+						id="userSettingSmplFrm"
+						editable="true"
+						layout="ResponsiveGridLayout"
+						labelSpanL="4"
+						labelSpanM="4"
+						emptySpanL="1"
+						emptySpanM="1"
+						columnsL="2"
+						columnsM="2"
+					>
+						<f:content>
+							<Label text="{i18n>LBL_TEXT_PROFIT_CENTER_GRP}" />
+							<HBox justifyContent="Start">
+								<Input
+									id="userSettingInpProfitCenterGrp"
+									value="{listData>SupplierSite}"
+									showValueHelp="true"
+									valueHelpOnly="true"
+									valueHelpRequest="onValueHelpRequestForProfitCenterGrp"
+									submit="getProfitCenterText"
+									width="10em"
+								/>
+								<HBox width="2em" />
+								<Text id="userSettingTxtProfitCenterGrpTxt" />
+								<Text id="userSettingTxtManagementArea" textAlign="Left" visible="false" />
+							</HBox>
+							<Label text="{i18n>LBL_TEXT_DEFAULT_SITE}" />
+							<HBox justifyContent="Start">
+								<Input
+									id="userSettingInpDefaultSite"
+									value="{listData>SupplierSite}"
+									showValueHelp="true"
+									valueHelpOnly="true"
+									valueHelpRequest="onValueHelpRequestForDefaultSite"
+									submit="getDefaultSiteText"
+									width="10em"
+								/>
+								<HBox width="2em" />
+								<Text id="userSettingTxtDefaultSiteTxt" textAlign="Left" />
+							</HBox>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+				<footer>
+					<Toolbar>
+						<HBox width="100%" justifyContent="End">
+							<Button id="userSettingBtnSave" type="Accept" text="{i18n>BTN_TEXT_UPDATE}" press="onSave" />
+						</HBox>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
